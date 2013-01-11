@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>      
+
+        <!-- set the viewport -->
+        <script>
+           var meta = document.createElement("meta");
+           meta.setAttribute('name','viewport');
+           meta.setAttribute('content','initial-scale='+ (1/window.devicePixelRatio) + ',user-scalable=no');
+           document.getElementsByTagName('head')[0].appendChild(meta);
+        </script>   
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Hello World</title>
+    </head>
+
+    <body>
+        <div class="tests">
+            <div class="titlebar">
+                <h1>API TESTS</h1>
+            </div>
+
+            <div class="testList">
+                <ul>
+
+                    <!-- accelerometer -->
+                    <li onclick="testAccelerometer();">  
+                        <img src="images/accel.png"/>
+                        <p class="testHeader">Accelerometer</p>
+                    </li>
+
+                    <!-- camera -->
+                    <li onclick="testCamera();">  
+                        <img src="images/camera.png"/>
+                        <p class="testHeader">Camera</p>
+                    </li>
+
+                    <!-- connections -->
+                    <li onclick="testConnections();">  
+                        <img src="images/connections.png"/>
+                        <p class="testHeader">Connections</p>
+                    </li>
+
+                    <!-- geolocation -->
+                    <li onclick="toggleGeolocation();">  
+                        <img src="images/geolocation.png"/>
+                        <p class="testHeader">Gelocation</p>
+                    </li>
+
+                    <!-- geolocation - get location -->
+                    <li class="submenu geolocation" onclick="testGeolocation();">  
+                        <img src="images/bullet.png"/>
+                        <p class="testHeader">Current Position</p>
+                    </li>
+
+                    <!-- geolocation - monitor -->
+                    <li class="submenu geolocation" onclick="testGeolocationWatch();">  
+                        <img src="images/bullet.png"/>
+                        <p class="testHeader">Monitor</p>
+                    </li>
+
+                    <!-- notification -->
+                    <li onclick="toggleNotifications();">  
+                        <img src="images/notification.png"/>
+                        <p class="testHeader">Notifications</p>
+                    </li>
+
+                    <!-- notification - alert -->
+                    <li class="submenu notification" onclick="testNotificationAlert();">  
+                        <img src="images/bullet.png"/>
+                        <p class="testHeader">Alert</p>
+                    </li>
+
+                    <!-- notification - confirm -->
+                    <li class="submenu notification" onclick="testNotificationConfirm();">  
+                        <img src="images/bullet.png"/>
+                        <p class="testHeader">Confirm</p>
+                    </li>
+
+                    <!-- storage - open db -->
+                    <li onclick="testStorageOpenDatabase();">  
+                        <img src="images/storage.png"/>
+                        <p class="testHeader">Storage</p>
+                    </li>      
+
+                    <li></li>
+                </ul>
+            </div>
+
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="local:///chrome/webworks.js"></script>
+
+        <script type="text/javascript">
+            // when webworks ready event fires, initialize the app
+            document.addEventListener("webworksready", function(){ 
+                initWebWorks();
+            });
+            app.initialize();
+        </script>
+    </body>
+</html>
