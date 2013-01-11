@@ -30,7 +30,7 @@ Icons used here are from [http://subway.pixle.pl/rim](http://subway.pixle.pl/rim
 
 ## Porting Resources 
 
-**If you're porting an existing PhoneGap application over to BlackBerry 10 refer to "[Porting your existing PhoneGap app to BlackBerry 10]"(http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Porting-your-existing-PhoneGap-application-to-BlackBerry-10/ta-p/2070503) for lots of helpful information.**
+**If you're porting an existing PhoneGap application over to BlackBerry 10 refer to [Porting your existing PhoneGap app to BlackBerry 10](http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Porting-your-existing-PhoneGap-application-to-BlackBerry-10/ta-p/2070503) for lots of helpful information.**
 
 ## More Info
 
