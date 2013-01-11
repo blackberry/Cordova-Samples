@@ -26,11 +26,11 @@ Icons used here are from [http://subway.pixle.pl/rim](http://subway.pixle.pl/rim
 
 ## Getting Started
 
-***To use this sample, refer to the [Getting Started With BlackBerry guide](http://docs.phonegap.com/en/2.3.0/guide_getting-started_blackberry_index.md.html#Getting%20Started%20with%20BlackBerry) which will take you through the entire setup, and building process. ***
+**To use this sample, refer to the [Getting Started With BlackBerry guide](http://docs.phonegap.com/en/2.3.0/guide_getting-started_blackberry_index.md.html#Getting%20Started%20with%20BlackBerry) which will take you through the entire setup, and building process.**
 
 ## Porting Resources 
 
-***If you're porting an existing PhoneGap application over to BlackBerry 10 refer to "[Porting your existing PhoneGap app to BlackBerry 10]"(http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Porting-your-existing-PhoneGap-application-to-BlackBerry-10/ta-p/2070503) for lots of helpful information.***
+**If you're porting an existing PhoneGap application over to BlackBerry 10 refer to "[Porting your existing PhoneGap app to BlackBerry 10]"(http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Porting-your-existing-PhoneGap-application-to-BlackBerry-10/ta-p/2070503) for lots of helpful information.**
 
 ## More Info
 
