@@ -12,7 +12,7 @@ The sample code for this application is Open Source under the [Apache 2.0 Licens
 
 **Author(s)**
 
-* Chad Tetreault (http://www.twitter.com/chadtatro)
+* [Chad Tetreault](http://www.twitter.com/chadtatro)
 
 **Dependencies**
 
@@ -23,6 +23,10 @@ The sample code for this application is Open Source under the [Apache 2.0 Licens
 Icons used here are from [http://subway.pixle.pl/rim](http://subway.pixle.pl/rim) are [licensed](http://creativecommons.org/licenses/by/3.0/) under the CC-BY-3.0 license.  This is a subset of the Subway icons available at http://subway.pixle.pl/
 
 **To contribute code to this repository you must be [signed up as an official contributor](http://blackberry.github.com/howToContribute.html).**
+
+## Screenshots 
+
+![Screenshot](https://github.com/ctetreault/Cordova-Samples/raw/master/PhoneGap-BB10-Bootstrap/screenshot.png)
 
 ## Getting Started
 
