@@ -48,7 +48,7 @@ Here's a quick glimpse at what we're doing in the app...
 
 First, we invoke the camera using the PhoneGap API
 
-``
+```
 function invokeCamera() {
   var cameraOptions = {
     destinationType: Camera.DestinationType.FILE_URI
@@ -69,13 +69,13 @@ function invokeCamera() {
   // options
   cameraOptions);
 }
-``
+```
 
 **Resize the photo**
 
 Next, we resize the photo because nobody wants to see your enormous 10000x10000 pixel image on their Facebook wall.  Also, making it smaller will decrease the bandwidth, and time, used to transfer it.
 
-``
+```
 function resizePhoto(path) {
   var canvas = $('#theCanvas').get(0);
   var ctx = canvas.getContext('2d');
@@ -88,7 +88,7 @@ function resizePhoto(path) {
     savePhoto(canvas);
   };
 }
-``
+```
 
 ** Saving the photo **
 
@@ -98,7 +98,7 @@ function resizePhoto(path) {
 
 Last, we are using the BlackBerry 10 [Invocation Framework](https://developer.blackberry.com/html5/apis/blackberry.invoke.html) to display a list of apps which you can share the photo with. Check-out the [shareTargets](https://github.com/blackberry/BB10-WebWorks-Samples/tree/master/ShareTargets) sample for more info on using the framework.
 
-``
+```
 var request = {
   action: 'bb.action.SHARE',
   uri: 'file://' + savedFilePath,
@@ -111,7 +111,7 @@ blackberry.invoke.card.invokeTargetPicker(request, "Sharing is caring",
 
   function(e) {
 });
-``
+```
 
 ## More Info
 
