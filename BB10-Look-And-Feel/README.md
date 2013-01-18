@@ -12,7 +12,7 @@ The sample code for this application is Open Source under the [Apache 2.0 Licens
 
 **Author(s)**
 
-* Chad Tetreault (http://www.twitter.com/chadtatro)
+* [Chad Tetreault](http://www.twitter.com/chadtatro)
 
 **Dependencies**
 
@@ -30,19 +30,19 @@ Share icon used is from the official [BlackBerry 10 UI icon pack](https://develo
 
 ## Getting Started with PhoneGap & Cordova
 
-***To use this sample, refer to the [Getting Started With BlackBerry guide](http://docs.phonegap.com/en/2.3.0/guide_getting-started_blackberry_index.md.html#Getting%20Started%20with%20BlackBerry) which will take you through the entire setup, and building process. ***
+To use this sample, refer to the [Getting Started With BlackBerry guide](http://docs.phonegap.com/en/2.3.0/guide_getting-started_blackberry_index.md.html#Getting%20Started%20with%20BlackBerry) which will take you through the entire setup, and building process.
 
 ## Porting Resources 
 
-***If you're porting an existing PhoneGap application over to BlackBerry 10 refer to "[Porting your existing PhoneGap app to BlackBerry 10]"(http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Porting-your-existing-PhoneGap-application-to-BlackBerry-10/ta-p/2070503) for lots of helpful information.***
+If you're porting an existing PhoneGap application over to BlackBerry 10 refer to "[Porting your existing PhoneGap app to BlackBerry 10]"(http://supportforums.blackberry.com/t5/Web-and-WebWorks-Development/Porting-your-existing-PhoneGap-application-to-BlackBerry-10/ta-p/2070503) for lots of helpful information.
 
 ## Using this sample
 
-This sample shows you how to get that BlackBerry 10 look and feel from an HTML5 app.  We're making use of PhoneGap's Camera API, and the BlackBerry 10 [Invocation Framework](https://developer.blackberry.com/html5/apis/blackberry.invoke.html).  Sharing the photo taken by the camera will allow the user to share with variety of different applications installed on the phone.
+This sample shows you how to get that BlackBerry 10 look and feel from an HTML5 app.  We're making use of PhoneGap's Camera API, and the BlackBerry 10 [Invocation Framework](https://developer.blackberry.com/html5/apis/blackberry.invoke.html).  Sharing the photo via the Invocation Framework will allow the user to connect with a variety of different applications installed on the phone.
 
 ## The code
 
-***Here's a quick glimpse at what we're doing in the app***
+Here's a quick glimpse at what we're doing in the app...
 
 **Invoke the camera**
 
@@ -89,6 +89,7 @@ function resizePhoto(path) {
   };
 }
 ``
+
 ** Saving the photo **
 
 [Erik Oros](http://github.com/oros) has written a great sample that shows how to save HTML5 Canvas data to the filesystem.  Check out [Canvas-to-Filesystem](https://github.com/oros/BB10-WebWorks-Samples/tree/master/canvasToFilesystem) for more info.
