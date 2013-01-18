@@ -90,11 +90,11 @@ function resizePhoto(path) {
 }
 ```
 
-** Saving the photo **
+**Saving the photo**
 
 [Erik Oros](http://github.com/oros) has written a great sample that shows how to save HTML5 Canvas data to the filesystem.  Check out [Canvas-to-Filesystem](https://github.com/oros/BB10-WebWorks-Samples/tree/master/canvasToFilesystem) for more info.
 
-** Invoke Sharing Targets **
+**Invoke Sharing Targets**
 
 Last, we are using the BlackBerry 10 [Invocation Framework](https://developer.blackberry.com/html5/apis/blackberry.invoke.html) to display a list of apps which you can share the photo with. Check-out the [shareTargets](https://github.com/blackberry/BB10-WebWorks-Samples/tree/master/ShareTargets) sample for more info on using the framework.
 
