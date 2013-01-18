@@ -99,29 +99,18 @@ function resizePhoto(path) {
 Last, we are using the BlackBerry 10 [Invocation Framework](https://developer.blackberry.com/html5/apis/blackberry.invoke.html) to display a list of apps which you can share the photo with. Check-out the [shareTargets](https://github.com/blackberry/BB10-WebWorks-Samples/tree/master/ShareTargets) sample for more info on using the framework.
 
 ``
-function invokeShare() {
-  if(savedFilePath == null) {
-    toast('Take a photo first!');
-    return false;
-  } else {
+var request = {
+  action: 'bb.action.SHARE',
+  uri: 'file://' + savedFilePath,
+  target_type: ["APPLICATION", "VIEWER", "CARD"]
+};
 
-    var request = {
-      action: 'bb.action.SHARE',
-      uri: 'file://' + savedFilePath,
-      target_type: ["APPLICATION", "VIEWER", "CARD"]
-    };
+blackberry.invoke.card.invokeTargetPicker(request, "Sharing is caring",
+  function() {
+  },
 
-    blackberry.invoke.card.invokeTargetPicker(request, "Sharing is caring",
-
-    // success callback
-    function() {
-    },
-
-    // error callback
-    function(e) {
-    });
-  }
-}
+  function(e) {
+});
 ``
 
 ## More Info
