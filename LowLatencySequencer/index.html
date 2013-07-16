@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!--
+ * Copyright (c) 2013 Research In Motion Limited.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+
+<html>
+	<head>
+		<title>Low Latency Sequencer</title>
+		
+		<script type="text/javascript">
+			var meta = document.createElement('meta');
+			meta.setAttribute('name', 'viewport');
+			meta.setAttribute('content', 'user-scalable=no,initial-scale=' + (1.0 / window.devicePixelRatio));
+			document.getElementsByTagName('head')[0].appendChild(meta);
+		</script>
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="wrapper">
+				<div class="kits">
+					<div class="kit" data-kit="kits/mixed/kit.json">		<img src="kits/mixed/mixed-grey.png" />			<img class="hide" src="kits/mixed/mixed.png" />			</div>
+					<div class="kit" data-kit="kits/blip/kit.json">			<img src="kits/blip/blip-grey.png" />			<img class="hide" src="kits/blip/blip.png" />			</div>
+					<div class="kit" data-kit="kits/coin/kit.json">			<img src="kits/coin/coin-grey.png" />			<img class="hide" src="kits/coin/coin.png" />			</div>
+					<div class="kit" data-kit="kits/explosion/kit.json">	<img src="kits/explosion/explosion-grey.png" />	<img class="hide" src="kits/explosion/explosion.png" />	</div>
+					<div class="kit" data-kit="kits/hit/kit.json">			<img src="kits/hit/hit-grey.png" />				<img class="hide" src="kits/hit/hit.png" />				</div>
+					<div class="kit" data-kit="kits/jump/kit.json">			<img src="kits/jump/jump-grey.png" />			<img class="hide" src="kits/jump/jump.png" />			</div>
+					<div class="kit" data-kit="kits/laser/kit.json">		<img src="kits/laser/laser-grey.png" />			<img class="hide" src="kits/laser/laser.png" />			</div>
+					<div class="kit" data-kit="kits/powerup/kit.json">		<img src="kits/powerup/powerup-grey.png" />		<img class="hide" src="kits/powerup/powerup.png" />		</div>
+				</div>
+				<div class="content"></div>
+				<div class="curtain"></div>
+			</div>
+
+			<div class="footer">
+				<div class="toggleKits">	<img src="images/kits-1.png" />	<img class="hide" src="images/kits-1_blue.png" />		</div>
+				<div class="togglePlay">	<img src="images/play.png" />	<img class="hide" src="images/play_blue.png" />		</div>
+				<div class="toggleRepeat">	<img src="images/repeat-1.png" />	<img class="hide" src="images/repeat-1_blue.png" />	</div>
+				<div class="toggleBPM">120</div>
+			</div>
+			
+			<div class="bpmslider">
+				<div>50</div>
+				<input type="range" name="bpm" min="50" max="250" value="120" />
+				<div>250</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="LLAudio.js"></script>
+		<script type="text/javascript" src="js/App.js"></script>
+		<script type="text/javascript" src="js/Sequence.js"></script>
+		<script type="text/javascript" src="js/Node.js"></script>
+		<script type="text/javascript">
+			/*global App */
+
+			function kitStart() {
+				this.tap = true;
+			}
+
+			function kitMove() {
+				this.tap = false;
+			}
+
+			function kitEnd(evt) {
+				if (this.tap === true && evt.srcElement.nodeName.toLowerCase() === 'img') {
+					App.toggleKit(evt.srcElement.parentElement);
+				}
+			}
+
+			window.addEventListener('DOMContentLoaded', function () {
+				App.init();
+
+				document.querySelector('.toggleKits').addEventListener('touchstart', function (evt) {
+					App.toggleKits(evt.currentTarget);
+				}, false);
+				document.querySelector('.togglePlay').addEventListener('touchstart', function (evt) {
+					App.togglePlay(evt.currentTarget);
+				}, false);
+				document.querySelector('.toggleRepeat').addEventListener('touchstart', function (evt) {
+					App.toggleRepeat(evt.currentTarget);
+				}, false);
+				document.querySelector('.toggleBPM').addEventListener('touchstart', function (evt) {
+					App.toggleBPM(evt.currentTarget);
+				}, false);
+				document.querySelector('input[name="bpm"]').addEventListener('change', function (evt) {
+					App.updateBPM(evt.currentTarget);
+				}, false);
+
+				document.querySelector('.kits').addEventListener('touchstart', kitStart, false);
+				document.querySelector('.kits').addEventListener('touchmove', kitMove, false);
+				document.querySelector('.kits').addEventListener('touchend', kitEnd, false);
+			}, false);
+		</script>
+	</body>
+</html>

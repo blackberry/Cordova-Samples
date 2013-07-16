@@ -1,0 +1,17 @@
+{
+	"name": "basic coin kit 1",
+	"version": "1.0",
+	"description": "Created with sfxr: http://www.drpetter.se/project_sfxr.html",
+	"audio": [
+		{ "id": "0.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-red.png" },
+		{ "id": "1.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-orange.png" },
+		{ "id": "2.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-yellow.png" },
+		{ "id": "3.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-green.png" },
+		{ "id": "4.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-blue.png" },
+		{ "id": "5.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-magenta.png" },
+		{ "id": "6.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-pink.png" },
+		{ "id": "7.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-red.png" },
+		{ "id": "8.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-orange.png" },
+		{ "id": "9.wav", "voices": 2, "imgMuted": "coin.png", "img": "coin-yellow.png" }
+	]
+}
