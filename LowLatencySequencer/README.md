@@ -1,4 +1,4 @@
-![Splash](https://raw.github.com/oros/Cordova-Samples/master/LowLatencySequencer/images/sequencer_landscape768.jpg)
+![Splash](https://raw.github.com/blackberry/Cordova-Samples/master/LowLatencySequencer/images/sequencer_landscape768.jpg)
 
 Requirements
 ============
