@@ -1,0 +1,14 @@
+{
+	"name": "basic mixed kit 1",
+	"version": "1.0",
+	"description": "Created with sfxr: http://www.drpetter.se/project_sfxr.html",
+	"audio": [
+		{ "id": "0.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-red.png" },
+		{ "id": "1.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-orange.png" },
+		{ "id": "2.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-yellow.png" },
+		{ "id": "3.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-green.png" },
+		{ "id": "4.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-blue.png" },
+		{ "id": "5.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-magenta.png" },
+		{ "id": "6.wav", "voices": 2, "imgMuted": "mixed.png", "img": "mixed-pink.png" }
+	]
+}
