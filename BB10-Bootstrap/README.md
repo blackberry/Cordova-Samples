@@ -27,7 +27,7 @@ Icons used here are from [http://subway.pixle.pl/rim](http://subway.pixle.pl/rim
 
 ## Screenshots 
 
-![Screenshot](https://github.com/ctetreault/Cordova-Samples/raw/master/BB10-Bootstrap/screenshot.png)
+![Screenshot](https://github.com/blackberry/Cordova-Samples/raw/master/BB10-Bootstrap/screenshot.png)
 
 ## Getting Started
 
