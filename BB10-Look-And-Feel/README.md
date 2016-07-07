@@ -12,7 +12,7 @@ The sample code for this application is Open Source under the [Apache 2.0 Licens
 
 **Author(s)**
 
-* [Chad Tetreault](http://www.twitter.com/chadtatro)
+* [Chad Tetreault](http://bit.ly/chadli123)
 
 **Dependencies**
 
