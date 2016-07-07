@@ -9,7 +9,7 @@ This sample is a meant to be a starting point for any BlackBerry WebWorks develo
 
 **Author(s)** 
 
-* [Chad Tetreault](http://www.twitter.com/chadtatro)
+* [Chad Tetreault](http://bit.ly/chadli123)
 
 **Built For BlackBerry**
 
